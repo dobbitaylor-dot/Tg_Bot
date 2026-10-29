@@ -1,0 +1,10 @@
+node_modules
+npm-debug.log
+.env
+tracker.json
+tracker.json.tmp
+data
+*.log
+.git
+.gitignore
+test-data.js

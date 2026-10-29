@@ -1,0 +1,12 @@
+services:
+  bot:
+    build: .
+    image: rucoy-tg-bot
+    restart: unless-stopped
+    env_file:
+      - .env
+    environment:
+      DATA_DIR: /app/data
+      # TRACK_INTERVAL_MS: 120000
+    volumes:
+      - ./data:/app/data
